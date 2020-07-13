@@ -131,7 +131,7 @@ pub fn lua_clear() {
     let framebuffer = get_current_framebuffer!();
     framebuffer.clear();
     framebuffer.full_refresh(
-        waveform_mode::WAVEFORM_MODE_INIT,
+        waveform_mode::WAVEFORM_MODE_DU,
         display_temp::TEMP_USE_AMBIENT,
         dither_mode::EPDC_FLAG_USE_DITHERING_PASSTHROUGH,
         0,
