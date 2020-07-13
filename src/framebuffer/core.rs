@@ -60,7 +60,7 @@ impl<'a> framebuffer::FramebufferBase<'a> for Framebuffer<'a> {
         var_screen_info.sync = 0;
         var_screen_info.vmode = 0; // FB_VMODE_NONINTERLACED
         var_screen_info.accel_flags = 0;
-        var_screen_info.bits_per_pixel = 8;
+        var_screen_info.bits_per_pixel = 16;
 
         Framebuffer::put_var_screeninfo(&device, &mut var_screen_info);
 
